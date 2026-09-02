@@ -3,35 +3,19 @@ import React from "react";
 
 const RightHero = () => {
     return (
-        <div className="relative h-[80vh] min-h-105 w-full overflow-hidden">
-            {/* Watermark */}
-            <span className="absolute left-6 top-6 font-serif text-xl text-ivory">
-                HEAVEN{" "}
-                <span className="block text-xs tracking-[0.2em]">
-                    FURNITURE MART
-                </span>
-            </span>
-
-            {/* Category tags */}
-            {/* <div className="absolute left-6 top-1/3 flex flex-col gap-1 text-2xl font-serif tracking-wide text-ivory sm:text-3xl">
-          <span className="bg-ink/90 px-4 py-2 w-fit">OFFICE</span>
-          <span className="bg-ink/60 px-4 py-2 w-fit">CHAIR</span>
-        </div> */}
-
-            {/* Copy + CTA */}
-            <div className="absolute bottom-24 left-6 max-w-[200px] text-sm text-ivory">
-                Let&apos;s make your office look refined.
-            </div>
-
+        <div className="relative h-[420px] w-full overflow-hidden rounded-sm sm:h-[500px] md:h-[560px] lg:h-[620px] xl:h-[680px]">
+            {/* Image */}
             <Image
                 src="https://i.ibb.co.com/DPBVVFxw/772521594-1714467227351436-1245435330287886749-n.jpg"
                 alt="Office chair, Heaven Furniture Mart"
                 fill
-                className="object-cover rounded-sm"
+                priority
+                className="rounded-sm object-cover"
+                sizes="(max-width: 1024px) 100vw, 55vw"
             />
 
-            {/* Index label */}
-            <div className="absolute bottom-6 left-1/2 flex items-center gap-2 text-xs text-ivory/80">
+            {/* Index label  */}
+            <div className="absolute bottom-4 left-1/2 z-10 flex -translate-x-1/2 items-center gap-2 whitespace-nowrap text-[9px] text-ivory/80 sm:bottom-6 sm:text-xs">
                 <span className="text-brass">01</span>
                 <span className="tracking-wide">
                     MADE FOR THE WAY YOU LIVE.
@@ -39,7 +23,7 @@ const RightHero = () => {
             </div>
 
             {/* Vertical location tag */}
-            <div className="absolute right-4 top-1/2 hidden -translate-y-1/2 [writing-mode:vertical-rl] text-xs tracking-[0.2em] text-ivory/70 sm:block">
+            <div className="absolute right-3 top-1/2 z-10 hidden -translate-y-1/2 [writing-mode:vertical-rl] text-[9px] tracking-[0.2em] text-ivory/70 md:block">
                 CHATTOGRAM · EST. 2020
             </div>
         </div>

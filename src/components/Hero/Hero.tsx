@@ -1,14 +1,14 @@
 import LeftHero from "./LeftHero";
 import RightHero from "./RightHero";
 
-// components/Hero.tsx
 export default function Hero() {
-  return (
-    <section className="grid grid-cols-1 items-center gap-10 px-6 py-16 sm:grid-cols-[0.9fr_1.1fr] sm:gap-6 sm:px-16 sm:py-24 container mx-auto">
-      {/* Left */}
-      <LeftHero></LeftHero>
-      {/* Right — image */}
-      <RightHero></RightHero>
-    </section>
-  );
+    return (
+        <section className="container mx-auto grid grid-cols-1 items-center gap-10 px-4 py-10 sm:px-6 sm:py-14 md:gap-12 md:px-10 lg:grid-cols-[0.9fr_1.1fr] lg:gap-10 lg:px-10 lg:py-16 xl:px-12">
+            {/* Left */}
+            <LeftHero />
+
+            {/* Right */}
+            <RightHero />
+        </section>
+    );
 }
