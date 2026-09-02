@@ -7,15 +7,15 @@ const LeftHero = () => {
                 DESIGNED. CRAFTED. CUSTOMIZED.
             </span>
 
-            <h1 className="mt-4 max-w-xl font-serif text-4xl leading-[1.05] sm:mt-5 sm:text-5xl md:text-6xl lg:mt-6 xl:text-7xl">
+            <h1 className="mt-4 max-w-xl font-serif font-bold text-4xl leading-[1.05] sm:mt-5 sm:text-5xl md:text-6xl lg:mt-6 xl:text-7xl">
                 Furniture,
                 <br />
-                <em className="italic text-brown">crafted</em> around
+                <em className="text-green-900 italic text-brown">crafted</em> around
                 <br />
                 you.
             </h1>
 
-            <p className="mt-5 max-w-md text-sm leading-6 text-brown/70 sm:mt-6 sm:text-base">
+            <p className="mt-5 max-w-md text-xl leading-6 sm:mt-6 sm:text-base">
                 Bespoke furniture and interior styling for homes that feel
                 unmistakably yours.
             </p>

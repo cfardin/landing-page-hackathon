@@ -50,7 +50,7 @@ const Navbar = () => {
                 </Link>
 
                 {/* Desktop Navigation */}
-                <nav className="hidden items-center gap-6 text-[11px] tracking-[0.18em] text-brown/60 lg:flex xl:gap-10">
+                <nav className="hidden items-center gap-6 text-xl tracking-[0.18em] text-brown/60 lg:flex xl:gap-10">
                     {LINKS.map((link) => (
                         <a
                             key={link.label}
