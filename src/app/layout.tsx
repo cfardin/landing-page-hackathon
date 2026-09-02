@@ -32,6 +32,8 @@
 // app/layout.tsx
 import { Fraunces, Inter } from "next/font/google";
 import "./globals.css";
+import Navbar from "@/components/Navbar";
+import Hero from "@/components/Hero/Hero";
 
 const fraunces = Fraunces({
   subsets: ["latin"],
@@ -49,7 +51,11 @@ export const metadata = {
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
     <html lang="en">
-      <body className={`${fraunces.variable} ${inter.variable} font-sans bg-ivory text-brown`}>{children}</body>
+      <body className={`${fraunces.variable} ${inter.variable} font-sans bg-ivory text-brown`}>
+        <Navbar></Navbar>
+        <Hero></Hero>
+        {children}
+      </body>
     </html>
   );
 }
