@@ -14,7 +14,7 @@ const Gallery = () => {
   const visible = expanded ? images : images.slice(0, INITIAL_COUNT);
 
   return (
-    <section className="px-6 py-24 sm:px-16">
+    <section id="gallery" className="px-6 py-24 sm:px-16">
       <h2 className="mb-10 font-serif text-4xl font-bold text-center text-green-900">From our showroom</h2>
 
       <div className="grid grid-cols-2 gap-4 sm:grid-cols-3">

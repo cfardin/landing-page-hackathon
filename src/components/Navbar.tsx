@@ -9,6 +9,7 @@ const WHATSAPP = "https://wa.me/8801960481983";
 const LINKS = [
     { label: "Collections", href: "#collections" },
     { label: "Bespoke", href: "#bespoke" },
+    {label : "Gallery", href : "#gallery" },
     { label: "Our Story", href: "#about" },
     { label: "Visit Us", href: "#footer" },
 ];
@@ -18,7 +19,7 @@ const Navbar = () => {
 
     return (
         <header className="sticky top-0 z-50 w-full border-b border-green-900 bg-ivory/95 backdrop-blur-md">
-            <div className="container mx-auto flex min-h-[72px] items-center justify-between px-4 sm:px-6 lg:px-10 xl:px-12">
+            <div className="container mx-auto flex min-h-18 items-center justify-between px-4 sm:px-6 lg:px-10 xl:px-12">
                 
                 {/* Logo */}
                 <Link
@@ -29,7 +30,7 @@ const Navbar = () => {
                     {/* Logo image */}
                     <span className="flex h-8 w-8 items-center justify-center overflow-hidden rounded-sm border-ink sm:h-9 sm:w-9">
                         <Image
-                            src="/logo.jpg"
+                            src="/main_logo.jpg"
                             width={100}
                             height={100}
                             alt="Heaven Furniture Mart logo"

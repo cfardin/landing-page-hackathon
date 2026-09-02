@@ -1,5 +1,7 @@
 "use client";
 
+import Image from "next/image";
+
 const WHATSAPP = "https://wa.me/8801960481983";
 
 const ContactFooter = () => {
@@ -99,8 +101,16 @@ const ContactFooter = () => {
                 <div className="mx-auto flex max-w-7xl flex-col items-center gap-7 lg:flex-row lg:justify-between">
                     {/* Logo */}
                     <div className="flex items-center gap-3">
-                        <span className="flex h-9 w-9 items-center justify-center border border-[#F6F1E7]/80 font-serif text-lg">
-                            H
+                        <span className="flex h-9 w-9 items-center justify-center font-serif text-lg">
+                            <span className="flex h-8 w-8 items-center justify-center overflow-hidden rounded-sm border-ink sm:h-9 sm:w-9">
+                                                    <Image
+                                                        src="/main_logo.jpg"
+                                                        width={100}
+                                                        height={100}
+                                                        alt="Heaven Furniture Mart logo"
+                                                        className="h-full w-full object-cover"
+                                                    />
+                                                </span>
                         </span>
 
                         <span className="flex flex-col leading-none">
