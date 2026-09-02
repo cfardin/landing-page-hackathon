@@ -27,7 +27,7 @@ const Navbar = () => {
                     onClick={() => setOpen(false)}
                 >
                     {/* Logo image */}
-                    <span className="flex h-8 w-8 items-center justify-center overflow-hidden border border-ink sm:h-9 sm:w-9">
+                    <span className="flex h-8 w-8 items-center justify-center overflow-hidden rounded-sm border-ink sm:h-9 sm:w-9">
                         <Image
                             src="/logo.jpg"
                             width={100}

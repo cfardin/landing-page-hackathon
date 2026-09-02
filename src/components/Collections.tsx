@@ -6,28 +6,28 @@ import Marquee from "react-fast-marquee";
 const ITEMS = [
     {
         name: "Living Room",
-        img: "https://i.ibb.co.com/DHcp0ZZH/734008893-1670206525110840-4556845434530645596-n.jpg",
+        img: "https://i.ibb.co.com/1fjDMnKY/784251271-1726752032789622-4156846528064326637-n.jpg",
     },
     {
         name: "Bedroom",
-        img: "https://i.ibb.co.com/h1KJZpdW/736449064-1670206528444173-4375750925473556720-n.jpg",
+        img: "https://i.ibb.co.com/VWSRDS54/775777922-1719636230167869-56427641527955046-n.jpg",
     },
     {
         name: "Dining",
-        img: "https://i.ibb.co.com/KpSPZXhj/736420675-1670206595110833-5351120681345196574-n.jpg",
+        img: "https://i.ibb.co.com/qYPQSvzj/781162830-1725721782892647-3495497836840174995-n.jpg",
     },
     {
         name: "Showcase",
-        img: "https://i.ibb.co.com/FLsp7ZzG/736989787-1672336724897820-6637246498013831067-n.jpg",
+        img: "https://i.ibb.co.com/gLfTC7w3/768205284-1711404377657721-1644144981235924073-n.jpg",
     },
     {
-        name: "Storage & Essentials",
+        name: "Storage",
+        img: "https://i.ibb.co.com/vvgXhhjt/768432878-1709553134509512-2759590473845537362-n.jpg",
+    },
+    {
+        name: "Office",
         img: "https://i.ibb.co.com/prfpRgt9/737046509-1672336761564483-389144073028099862-n.jpg",
-    },
-    {
-        name: "Bespoke",
-        img: "https://i.ibb.co.com/hRd19r3R/736675191-1672336771564482-1918114807941403944-n.jpg",
-        signature: true,
+
     },
 ];
 
@@ -35,7 +35,7 @@ const Collections = () => {
     return (
         <section
             id="collections"
-            className="overflow-hidden bg-[#F5F2EC] py-16 sm:py-20 md:py-24"
+            className="overflow-hidden bg-[#F5F2EC] py-16 sm:py-20 md:py-24 mb-20"
         >
             {/* Heading */}
             <div className="mx-auto max-w-3xl px-4 text-center sm:px-6">
@@ -67,14 +67,14 @@ const Collections = () => {
                         <a
                             key={item.name}
                             href="#"
-                            className="group relative mx-2 block h-[380px] w-[270px] shrink-0 overflow-hidden rounded-md sm:mx-3 sm:h-[440px] sm:w-[310px] lg:h-[500px] lg:w-[360px]"
+                            className="group relative mx-2 block aspect-square w-[280px] shrink-0 overflow-hidden rounded-md sm:mx-3 sm:w-[320px] md:w-[360px] lg:w-[400px]"
                         >
                             {/* Image */}
                             <Image
                                 src={item.img}
                                 alt={item.name}
                                 fill
-                                sizes="360px"
+                                sizes="(max-width: 640px) 280px, (max-width: 768px) 320px, (max-width: 1024px) 360px, 400px"
                                 className="object-cover transition-transform duration-700 ease-out group-hover:scale-105"
                             />
 
@@ -83,7 +83,7 @@ const Collections = () => {
 
                             {/* Card Content */}
                             <div className="absolute inset-0 flex flex-col items-center justify-center gap-3 px-4 text-center text-white">
-                                {item.signature && (
+                                {item && (
                                     <span className="text-[9px] tracking-[0.2em] text-white/80 sm:text-[10px]">
                                         SIGNATURE
                                     </span>

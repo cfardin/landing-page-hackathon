@@ -36,6 +36,11 @@ import Navbar from "@/components/Navbar";
 import Hero from "@/components/Hero/Hero";
 import Intro from "@/components/Intro";
 import Collections from "@/components/Collections";
+import Bespoke from "@/components/Bespoke";
+import Quote from "@/components/Quote";
+import ContactFooter from "@/components/Footer";
+import Gallery from "@/components/Gallery";
+import Milestones from "@/components/Milestones";
 
 const fraunces = Fraunces({
   subsets: ["latin"],
@@ -58,7 +63,12 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
         <Hero></Hero>
         <Intro></Intro>
         <Collections></Collections>
+        <Bespoke></Bespoke>
+        <Quote></Quote>
+        <Gallery></Gallery>
+        <Milestones></Milestones>
         {children}
+        <ContactFooter></ContactFooter>
   
       </body>
     </html>
