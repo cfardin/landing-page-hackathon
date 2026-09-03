@@ -17,10 +17,6 @@ const ContactFooter = () => {
                 {/* Left */}
                 <div className="flex flex-col justify-center">
                     <div className="flex items-center gap-3 text-[10px] tracking-[0.15em] sm:text-xs">
-                        <span className="font-serif italic text-[#2B1C13]">
-                            04
-                        </span>
-
                         <span className="text-[#A98753]">COME SAY HELLO</span>
                     </div>
 
@@ -58,7 +54,7 @@ const ContactFooter = () => {
 
                     {/* Contact Information */}
                     <div className="flex gap-20 mt-8 border-t border-[#2B1C13]/10 pt-5 text-xs leading-6 text-[#2B1C13]/70 sm:mt-10 sm:pt-6 sm:text-sm">
-                        <div>
+                        <div className="text-xl font-semibold">
                             <p>Agrabad Access Road</p>
                             <p>Chattogram, Bangladesh</p>
                             <p>
@@ -84,7 +80,7 @@ const ContactFooter = () => {
                                 href={WHATSAPP}
                                 target="_blank"
                                 rel="noopener noreferrer"
-                                className="mt-7 inline-flex w-fit items-center gap-3 bg-green-900 px-5 py-3 text-[10px] tracking-[0.12em] text-[#F6F1E7] transition-colors duration-200 hover:bg-[#2B1C13] sm:px-6 sm:py-3.5 sm:text-xs"
+                                className="mt-7 rounded-sm inline-flex w-fit items-center gap-3 bg-green-900 px-5 py-3 text-[10px] tracking-[0.12em] text-[#F6F1E7] transition-colors duration-200 hover:bg-[#2B1C13] sm:px-6 sm:py-3.5 sm:text-xs"
                             >
                                 WHATSAPP US
                                 <span aria-hidden="true">↗</span>

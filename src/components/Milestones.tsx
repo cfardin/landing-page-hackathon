@@ -1,4 +1,6 @@
+"use client";
 import Image from "next/image";
+import { motion } from "motion/react";
 
 const MILESTONES = [
     { year: "2020", text: "Founded by Abul Kalam Bhuiyan" },
@@ -31,7 +33,7 @@ const Milestones = () => {
                 {/* Section label */}
                 <div className="flex items-center gap-3 text-[10px] tracking-[0.15em] text-[#A98753] sm:text-xs">
                     <span className="h-px w-6 bg-[#A98753]" />
-                    <span>FIG. 06 — OUR JOURNEY</span>
+                    <span>OUR JOURNEY</span>
                 </div>
 
                 {/* Heading */}
@@ -42,8 +44,11 @@ const Milestones = () => {
                 {/* Milestones */}
                 <div className="mt-10 grid grid-cols-1 gap-y-8 sm:mt-14 sm:grid-cols-2 sm:gap-x-8 md:grid-cols-3 lg:grid-cols-5 lg:gap-x-6">
                     {MILESTONES.map((milestone) => (
-                        <div
+                        <motion.div
                             key={milestone.year}
+                            whileHover={{ scale: 1.1 }}
+                            whileTap={{ scale: 0.95 }}
+                            onHoverStart={() => console.log("hover started!")}
                             className="relative pt-6"
                         >
                             {/* Dot */}
@@ -59,7 +64,7 @@ const Milestones = () => {
                             <p className="mt-2 max-w-xs font-medium text-xl leading-6 text-[#2B1C13]/80">
                                 {milestone.text}
                             </p>
-                        </div>
+                        </motion.div>
                     ))}
                 </div>
             </div>

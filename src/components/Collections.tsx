@@ -35,7 +35,7 @@ const Collections = () => {
     return (
         <section
             id="collections"
-            className="overflow-hidden bg-[#F5F2EC] py-16 sm:py-20 md:py-24 mb-20"
+            className="overflow-hidden bg-[#F5F2EC] py-16 sm:py-20 md:py-24 mb-25"
         >
             {/* Heading */}
             <div className="mx-auto max-w-3xl px-4 text-center sm:px-6">

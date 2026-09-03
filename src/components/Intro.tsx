@@ -13,8 +13,7 @@ const Intro = () => {
                 className="pointer-events-none absolute inset-0 z-0 object-cover opacity-[0.20]"
             />
             <div className="container mx-auto">
-                <div className="flex items-center gap-3 text-xs tracking-[0.15em]">
-                    <span className="font-serif italic text-[#2B1C13]">01</span>
+                <div className="flex items-center gap-3 text-sm tracking-[0.15em]">
                     <span className="text-[#A98753]">THE HEAVEN APPROACH</span>
                 </div>
 
@@ -26,12 +25,12 @@ const Intro = () => {
                     </h2>
 
                     <div className="flex flex-col gap-5 self-end pb-1 text-[#2B1C13]/80">
-                        <p className="text-xl">
+                        <p className="text-xl font-semibold">
                             At Heaven Furniture Mart, we believe the best
                             furniture is not simply placed in a room. It belongs
                             there.
                         </p>
-                        <p className="text-xl">
+                        <p className="text-xl font-semibold">
                             From first sketch to final installation, we create
                             considered pieces around your space, your rhythm,
                             and your taste — right here in Chattogram.

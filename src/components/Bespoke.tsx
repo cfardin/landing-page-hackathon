@@ -38,10 +38,6 @@ const Bespoke = () => {
                 <div className="w-full max-w-xl">
                     {/* Eyebrow */}
                     <div className="flex items-center gap-3 text-[10px] tracking-[0.15em] sm:text-xs">
-                        <span className="font-serif italic text-[#A98753]">
-                            03
-                        </span>
-
                         <span className="text-[#A98753]">
                             THE BESPOKE DIFFERENCE
                         </span>
@@ -86,9 +82,9 @@ const Bespoke = () => {
                         href={WHATSAPP}
                         target="_blank"
                         rel="noopener noreferrer"
-                        className="mt-8 inline-flex w-fit items-center gap-3 bg-[#F6F1E7] px-5 py-3 text-[10px] tracking-[0.12em] text-[#16221F] transition-colors duration-200 hover:bg-[#A98753] sm:px-6 sm:py-3.5 sm:text-xs"
+                        className="mt-8 rounded-sm inline-flex w-fit items-center gap-3 bg-[#F6F1E7] px-5 py-3 text-xl  tracking-[0.12em] text-[#16221F] transition-colors duration-200 hover:bg-[#A98753] sm:px-6 sm:py-3.5 sm:text-xs"
                     >
-                        TALK TO A DESIGNER
+                        <span className="font-semibold">TALK TO A DESIGNER</span>
                         <span aria-hidden="true">↗</span>
                     </a>
                 </div>
