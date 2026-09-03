@@ -7,7 +7,7 @@ import { useState } from "react";
 import { images } from "../data"
 
 
-const INITIAL_COUNT = 3;
+const INITIAL_COUNT = 4;
 
 const Gallery = () => {
   const [expanded, setExpanded] = useState(false);
@@ -17,7 +17,7 @@ const Gallery = () => {
     <section id="gallery" className="px-6 py-24 sm:px-16">
       <h2 className="mb-10 font-serif text-4xl font-bold text-center text-green-900">From our showroom</h2>
 
-      <div className="grid grid-cols-2 gap-4 sm:grid-cols-3">
+      <div className="grid grid-cols-2 gap-4 sm:grid-cols-4">
         {visible.map((src, i) => (
           <div key={i} className="relative aspect-square overflow-hidden">
             <Image
