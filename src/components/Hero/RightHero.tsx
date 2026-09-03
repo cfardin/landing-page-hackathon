@@ -3,7 +3,7 @@ import React from "react";
 
 const RightHero = () => {
     return (
-        <div className="relative h-[420px] w-full overflow-hidden rounded-sm sm:h-[500px] md:h-[560px] lg:h-[620px] xl:h-[680px]">
+        <div className="relative h-105 w-full overflow-hidden rounded-sm sm:h-[500px] md:h-[560px] lg:h-[620px] xl:h-[680px]">
             {/* Image */}
             <Image
                 src="https://i.ibb.co.com/DPBVVFxw/772521594-1714467227351436-1245435330287886749-n.jpg"
@@ -31,3 +31,5 @@ const RightHero = () => {
 };
 
 export default RightHero;
+
+
