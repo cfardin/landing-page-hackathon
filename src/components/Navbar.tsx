@@ -3,6 +3,8 @@
 import Image from "next/image";
 import Link from "next/link";
 import { useState } from "react";
+import { FaSquareWhatsapp } from "react-icons/fa6";
+import { IoLogoWhatsapp } from "react-icons/io";
 
 const WHATSAPP = "https://wa.me/8801960481983";
 
@@ -55,7 +57,7 @@ const Navbar = () => {
                         <Link
                             key={link.label}
                             href={link.href}
-                            className="hover:text-green-900 hover:font-semibold whitespace-nowrap transition-colors duration-200 hover:text-ink"
+                            className="transition duration-300 hover:text-green-900 hover:font-semibold whitespace-nowrap "
                         >
                             {link.label.toUpperCase()}
                         </Link>
@@ -71,8 +73,7 @@ const Navbar = () => {
                     rel="noopener noreferrer"
                     className="hover:bg-green-900 hover:text-white hidden shrink-0 items-center gap-2 border border-green-900 rounded-sm px-4 py-2.5 text-[10px] tracking-[0.15em] text-brass transition-all duration-200 hover:border-ink hover:bg-ink hover:text-ivory lg:flex xl:px-5"
                 >
-                    <span className="font-bold">BOOK A CONSULTATION</span>
-                    <span aria-hidden="true">↗</span>
+                    <span className="font-bold flex items-center gap-2"><IoLogoWhatsapp size={22} /> BOOK A CONSULTATION</span>
                 </a>
 
                 {/* Mobile / Tablet Menu Button */}
@@ -136,10 +137,9 @@ const Navbar = () => {
                             target="_blank"
                             rel="noopener noreferrer"
                             onClick={() => setOpen(false)}
-                            className="mt-5 flex items-center justify-center gap-2 border border-green-900 px-4 py-3 text-[10px] font-medium tracking-[0.15em] text-brass transition-all duration-200 hover:border-ink hover:bg-ink hover:text-ivory"
+                            className="rounded-sm hover:bg-green-900 mt-5 flex items-center justify-center gap-2 border border-green-900 px-4 py-3 text-[10px] font-medium tracking-[0.15em] text-brass transition-all duration-200 hover:border-ink hover:bg-ink hover:text-ivory"
                         >
-                            <span>BOOK A CONSULTATION</span>
-                            <span aria-hidden="true">↗</span>
+                            <span className="flex items-center gap-1"><IoLogoWhatsapp size={22} /> BOOK A CONSULTATION</span>
                         </a>
                     </nav>
                 </div>

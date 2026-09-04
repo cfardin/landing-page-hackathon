@@ -2,9 +2,10 @@
 
 import {LogoFacebook} from '@gravity-ui/icons';
 import Image from "next/image";
-import { FaInstagram } from 'react-icons/fa';
+import { FaInstagram, FaPhoneAlt, FaWhatsappSquare } from 'react-icons/fa';
+import { FaLocationDot } from 'react-icons/fa6';
 import { GrYoutube } from 'react-icons/gr';
-import { IoLogoFacebook } from 'react-icons/io';
+import { IoLogoFacebook, IoLogoWhatsapp, IoMdMail } from 'react-icons/io';
 
 const WHATSAPP = "https://wa.me/8801960481983";
 
@@ -59,22 +60,22 @@ const ContactFooter = () => {
                     {/* Contact Information */}
                     <div className="flex gap-20 mt-8 border-t border-[#2B1C13]/10 pt-5 text-xs leading-6 text-[#2B1C13]/70 sm:mt-10 sm:pt-6 sm:text-sm">
                         <div className="text-xl font-semibold">
-                            <p>Agrabad Access Road</p>
+                            <p className='flex items-center gap-2'><FaLocationDot /> Agrabad Access Road</p>
                             <p>Chattogram, Bangladesh</p>
                             <p>
                                 <a
                                     href="tel:+8801960481983"
-                                    className="transition-colors hover:text-[#A98753]"
+                                    className=" flex items-center gap-2 transition-colors hover:text-[#A98753]"
                                 >
-                                    +880 1960-481983
+                                    <FaPhoneAlt /> +880 1960-481983
                                 </a>
                             </p>
                             <p>
                                 <a
                                     href="mailto:heavenfurnituremart@gmail.com"
-                                    className="break-all transition-colors hover:text-[#A98753]"
+                                    className="flex items-center gap-2 break-all transition-colors hover:text-[#A98753]"
                                 >
-                                    heavenfurnituremart@gmail.com
+                                    <IoMdMail /> heavenfurnituremart@gmail.com
                                 </a>
                             </p>
                         </div>
@@ -84,9 +85,9 @@ const ContactFooter = () => {
                                 href={WHATSAPP}
                                 target="_blank"
                                 rel="noopener noreferrer"
-                                className="mt-7 rounded-sm inline-flex w-fit items-center gap-3 bg-green-900 px-5 py-3 text-[10px] tracking-[0.12em] text-[#F6F1E7] transition-colors duration-200 hover:bg-[#2B1C13] sm:px-6 sm:py-3.5 sm:text-xs"
+                                className=" mt-7 rounded-sm inline-flex w-fit items-center gap-3 bg-green-900 px-5 py-3 text-[10px] tracking-[0.12em] text-[#F6F1E7] hover:text-white transition-colors duration-200 hover:bg-[#A98753] hover:text-[#A98753] sm:px-6 sm:py-3.5 sm:text-xs"
                             >
-                                WHATSAPP US
+                                <IoLogoWhatsapp  size={20} /> WHATSAPP US
                                 <span aria-hidden="true">↗</span>
                             </a>
                         </div>
