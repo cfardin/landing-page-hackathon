@@ -135,7 +135,7 @@ const SocialProof = () => {
                     <div className="border-b border-[#F6F1E7]/10 py-6">
                         <div className="flex items-start justify-between gap-6">
                             <div>
-                                <span className="block text-[9px] tracking-[0.16em] text-[#A98753]">
+                                <span className="block text-sm tracking-[0.16em] text-[#A98753]">
                                     BUSINESS CREDIBILITY
                                 </span>
 
@@ -153,7 +153,7 @@ const SocialProof = () => {
 
                     {/* Social presence */}
                     <div className="border-b border-[#F6F1E7]/10 py-6">
-                        <span className="block text-[9px] tracking-[0.16em] text-[#A98753]">
+                        <span className="block text-sm tracking-[0.16em] text-[#A98753]">
                             FOLLOW THE JOURNEY
                         </span>
 
@@ -166,7 +166,7 @@ const SocialProof = () => {
                                 href="https://www.facebook.com/HeavenFurnitureMart"
                                 target="_blank"
                                 rel="noopener noreferrer"
-                                className="text-[9px] tracking-[0.12em] text-[#F6F1E7] transition-colors hover:text-[#A98753]"
+                                className="text-sm tracking-[0.12em] text-[#F6F1E7] transition-colors hover:text-[#A98753]"
                             >
                                 FACEBOOK ↗
                             </a>
@@ -177,7 +177,7 @@ const SocialProof = () => {
                     <div className="mt-7 flex flex-wrap gap-3">
                         <Link
                             href="#collections"
-                            className="inline-flex items-center gap-3 border border-[#A98753] px-5 py-3 text-[10px] tracking-[0.14em] text-[#F6F1E7] transition-all duration-300 hover:bg-[#A98753] hover:text-[#16221F] sm:px-6 sm:py-3.5 sm:text-xs"
+                            className="rounded-sm inline-flex items-center gap-3 border border-[#A98753] px-5 py-3 text-[10px] tracking-[0.14em] text-[#F6F1E7] transition-all duration-300 hover:bg-[#A98753] hover:text-[#16221F] sm:px-6 sm:py-3.5 sm:text-xs"
                         >
                             EXPLORE OUR WORK
                             <span aria-hidden="true">↗</span>

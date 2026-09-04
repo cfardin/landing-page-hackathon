@@ -9,7 +9,7 @@ const WHATSAPP = "https://wa.me/8801960481983";
 const LINKS = [
     { label: "Collections", href: "#collections" },
     { label: "Bespoke", href: "#bespoke" },
-    {label : "Gallery", href : "#gallery" },
+    { label: "Gallery", href: "#gallery" },
     { label: "Our Story", href: "#about" },
     { label: "Visit Us", href: "#footer" },
 ];
@@ -20,10 +20,9 @@ const Navbar = () => {
     return (
         <header className="sticky top-0 z-50 w-full border-b border-green-900 bg-ivory/95 backdrop-blur-md">
             <div className="container mx-auto flex min-h-18 items-center justify-between px-4 sm:px-6 lg:px-10 xl:px-12">
-                
                 {/* Logo */}
                 <Link
-                    href="/"
+                    href="#hero"
                     className="flex shrink-0 items-center gap-2 sm:gap-3"
                     onClick={() => setOpen(false)}
                 >
@@ -51,17 +50,19 @@ const Navbar = () => {
                 </Link>
 
                 {/* Desktop Navigation */}
-                <nav className="hidden items-center gap-6 text-xl tracking-[0.18em] text-brown/60 lg:flex xl:gap-10">
+                <nav className="hidden items-center gap-7 text-xl tracking-[0.18em] text-brown/60 lg:flex xl:gap-10">
                     {LINKS.map((link) => (
-                        <a
+                        <Link
                             key={link.label}
                             href={link.href}
-                            className="whitespace-nowrap transition-colors duration-200 hover:text-ink"
+                            className="hover:text-green-900 hover:font-semibold whitespace-nowrap transition-colors duration-200 hover:text-ink"
                         >
                             {link.label.toUpperCase()}
-                        </a>
+                        </Link>
                     ))}
                 </nav>
+
+
 
                 {/* Desktop CTA */}
                 <a

@@ -1,6 +1,10 @@
 "use client";
 
+import {LogoFacebook} from '@gravity-ui/icons';
 import Image from "next/image";
+import { FaInstagram } from 'react-icons/fa';
+import { GrYoutube } from 'react-icons/gr';
+import { IoLogoFacebook } from 'react-icons/io';
 
 const WHATSAPP = "https://wa.me/8801960481983";
 
@@ -129,27 +133,27 @@ const ContactFooter = () => {
                             href="https://www.facebook.com/HeavenFurnitureMart"
                             target="_blank"
                             rel="noopener noreferrer"
-                            className="transition-colors hover:text-[#A98753]"
+                            className="flex items-center gap-2 transition-colors hover:text-[#A98753]"
                         >
-                            FACEBOOK
+                            <IoLogoFacebook size={18} /> FACEBOOK
                         </a>
 
                         <a
                             href="https://www.instagram.com/heaven_furniture_ltd"
                             target="_blank"
                             rel="noopener noreferrer"
-                            className="transition-colors hover:text-[#A98753]"
+                            className="flex items-center gap-2 transition-colors hover:text-[#A98753]"
                         >
-                            INSTAGRAM
+                            <FaInstagram size={18} /> INSTAGRAM
                         </a>
 
                         <a
                             href="https://www.youtube.com/@HeavenFurnitureMart"
                             target="_blank"
                             rel="noopener noreferrer"
-                            className="transition-colors hover:text-[#A98753]"
+                            className="flex items-center gap-2 transition-colors hover:text-[#A98753]"
                         >
-                            YOUTUBE
+                            <GrYoutube size={18} /> YOUTUBE
                         </a>
                     </div>
                 </div>
