@@ -1,9 +1,10 @@
 import Image from "next/image";
+import Link from "next/link";
 import React from "react";
 
 const RightHero = () => {
     return (
-        <div className="relative h-105 w-full overflow-hidden rounded-sm sm:h-[500px] md:h-[560px] lg:h-[620px] xl:h-[680px]">
+        <Link href={"#collections"} className="relative h-105 w-full overflow-hidden rounded-sm sm:h-[500px] md:h-[560px] lg:h-[620px] xl:h-[680px]">
             {/* Image */}
             <Image
                 src="https://i.ibb.co.com/DPBVVFxw/772521594-1714467227351436-1245435330287886749-n.jpg"
@@ -26,7 +27,7 @@ const RightHero = () => {
             <div className="absolute right-3 top-1/2 z-10 hidden -translate-y-1/2 [writing-mode:vertical-rl] text-[9px] tracking-[0.2em] text-ivory/70 md:block">
                 CHATTOGRAM · EST. 2020
             </div>
-        </div>
+        </Link>
     );
 };
 
